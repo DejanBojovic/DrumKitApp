@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #01082C;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("pictures/teget2.png");
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+/* button that shows drum-set */
+.signature {
+    display: inline-block;
+    font-size: 2rem;
+    color: white;
+    border: tomato 2px solid;
+    border-radius: 21px;
+    position: relative;
+    top: 46vh;
+    left: 67.8%;
+    padding: 5px;
+}
+
+.signature:hover {
+    background-color: tomato;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* drum-set */
+.main {
+    position: absolute;
+    top: 34%;
+    left: 44.2%;
+    width: 50%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}
+
+/* every button in drum-set */
+.main-div {
+    margin: 0 .5rem;
+    height: 30%;
+    width: 13%;
+    color: white;
+    border: 4px solid #7696F1;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+/* animation when clicked on button in drum-set*/
+.playing {
+    transform: scale(2.5);
+    border-color: #7FFFD4;
+    box-shadow: 0 0 10px #7FFFD4;
+}
+
+.main-div kbd {
+    /* font-family also added here to keep consistency with cross browser comaptibility(firefox)*/
+    font-family: 'Roboto', sans-serif; 
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .main-div {
+        height: 4rem;
+        width: 4rem;
+    }
+    
+    .main-div span {
+        display: none;
+    }
+
+    .main-div kbd {
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
