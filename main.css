@@ -35,7 +35,7 @@ body {
 }
 
 /* drum-set */
-.main {
+.keys {
     position: absolute;
     top: 34%;
     left: 44.2%;
@@ -47,7 +47,7 @@ body {
 }
 
 /* every button in drum-set */
-.main-div {
+.key {
     margin: 0 .5rem;
     height: 30%;
     width: 13%;
@@ -68,7 +68,7 @@ body {
     box-shadow: 0 0 10px #7FFFD4;
 }
 
-.main-div kbd {
+.key kbd {
     /* font-family also added here to keep consistency with cross browser comaptibility(firefox)*/
     font-family: 'Roboto', sans-serif; 
     font-size: 2rem;
